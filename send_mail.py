@@ -14,6 +14,7 @@ def send_mail():
     email.starttls()
     email.login(mail, passwd)
     email.sendmail(mail, mail, message)
+    email.quit()
 
 
 while True:
